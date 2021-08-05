@@ -2,6 +2,8 @@
 {
     public interface IItem
     {
-        public decimal Price { get; set; }
+        decimal DiscountAmount { get; set; }
+        int DiscountToQualifyQuantity { get; set; }
+        decimal Price { get; set; }
     }
 }
