@@ -7,10 +7,14 @@
     public abstract class Item : IItem
     {
         public decimal Price { get; set; }
+        public int DiscountToQualifyQuantity { get; set; }
+        public decimal DiscountAmount { get; set; }
 
-        public Item(decimal price)
+        public Item(decimal price, int discountToQualifyQuantity, decimal discountAmount)
         {
             Price = price;
+            DiscountToQualifyQuantity = discountToQualifyQuantity;
+            DiscountAmount = discountAmount;
         }
     }
 }

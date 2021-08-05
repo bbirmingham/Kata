@@ -9,5 +9,6 @@ namespace Kata
 
         void Scan(IEnumerable<Item> items);
         decimal GetTotalPrice();
+        decimal GetTotalPriceWithSpecialOffers();
     }
 }
