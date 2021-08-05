@@ -7,6 +7,7 @@ namespace Kata
     {
         List<Item> ScannedItems { get; set; }
 
-        void Scan(Item item);
+        void Scan(IEnumerable<Item> items);
+        decimal GetTotalPrice();
     }
 }
